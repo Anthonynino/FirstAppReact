@@ -1,12 +1,13 @@
 import React from "react";
 import { useState } from "react";
 import { GifGrid,AddCategory } from "./components";
+import 'animate.css';
 
 
 
 export const GifExpertApp = () =>{
 
-    const [categories, setCategories] = useState(['One punch']);
+    const [categories, setCategories] = useState(['One Punch']);
 
     const onAddCategory = ( newCategory) => {
 
@@ -21,8 +22,10 @@ export const GifExpertApp = () =>{
     return (
         <>
         {/*Title*/}
-        <h1 id="title">
-            GifExpertApp
+        <h1 className="animate__bounce" id="title">
+             <strong>
+            Anime Gifs
+            </strong>
         </h1>
        
         <AddCategory 
@@ -31,7 +34,7 @@ export const GifExpertApp = () =>{
         currentCategories= {categories}
         />
         {/* Gif Galery */}
-        <button onClick={onAddCategory}>Agregar</button>
+        
         
             {
                 categories.map( (category) => (

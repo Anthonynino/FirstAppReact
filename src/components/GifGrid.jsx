@@ -9,15 +9,15 @@ export const GifGrid = ({category}) => {
 
   return (
     <>
-        <h3>{category}</h3>
+        <h2 className="p-3 h1 text-bold animate__bounceInLeft"> <strong>{category} </strong></h2>
         
         {
           isLoading
           ? ( <h2>Cargando...</h2>) 
           : null
         }
-
-        <div className="card=grid">
+    
+          <div className=" row justify-content-center">
           {
               images.map( (images) => (
                 <GifItem 
@@ -27,8 +27,7 @@ export const GifGrid = ({category}) => {
               ))
 
           }
-        </div>
-     
+          </div>
         
     </>
 

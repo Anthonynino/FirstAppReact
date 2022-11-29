@@ -24,7 +24,7 @@ export const AddCategory = ({onNewCategory}) => {
 
     return (
         <form onSubmit={(event) => onSubmit(event)}>
-        <input type='text' placeholder="Buscar gifs" value={inputValue}
+        <input type='text' placeholder="Busca gifs de tu anime favorito" value={inputValue}
         onChange={(event) => onInputChange(event)}></input>
         </form>
 
